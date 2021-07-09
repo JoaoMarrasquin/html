@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='UTF-8'>	
+	<title>Examen primer parcial</title>	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+    * {font-family: Helvetica Neue, Arial, sans-serif; }
+
+body { background-image: linear-gradient(#aaa 25%, #000);}
+
+h1, table { text-align: center; }
+
+table {border-collapse: collapse;  width: 70%; margin: 0 auto 5rem;}
+
+th, td { padding: 1.5rem; font-size: 1.3rem; }
+
+tr {background: hsl(50, 50%, 80%); }
+
+tr, td { transition: .4s ease-in; } 
+
+tr:first-child {background: hsla(12, 100%, 40%, 0.5); }
+
+tr:nth-child(even) { background: hsla(50, 50%, 80%, 0.7); }
+
+td:empty {background: hsla(50, 25%, 60%, 0.7); }
+
+tr:hover:not(#firstrow), tr:hover td:empty {background: #ff0; pointer-events: visible;}
+tr:hover:not(#firstrow) { transform: scale(1.2); font-weight: 700; box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.5);}
+</style>
+
+<body>
+    <div>
+        <header>
+            <h1 class="titulo">Bienvenido al sistema </h1>
+        </header>
+        <div id="main-container">
+            <table id="racetimes">
+                <tr id="firstrow">
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Detalle</th>
+                    <th>Ingreso</th>
+                    <th>Gasto</th>
+                    <th>Saldo</th>
+                </tr>
+            <tr class="tablasecundaria">
+                <td class="dato1">01-01-2021</td>
+                <td class="dato2">09:00</td>
+                <td class="dato3">Compra pizza</td>
+                <td class="dato4"></td>
+                <td class="dato5">20</td>
+                <td class="dato6">1000</td>
+            </tr>
+            <tr class="tablasecundaria">
+                <td class="dato1">02-01-2021</td>
+                <td class="dato2">10:00</td>
+                <td class="dato3">Venta de sistema</td>
+                <td class="dato4">2000</td>
+                <td class="dato5"></td>
+                <td class="dato6">3000</td>
+            </tr>
+            <tr class="tablasecundaria">
+                <td class="dato1">02-01-2021</td>
+                <td class="dato2">13:00</td>
+                <td class="dato3">Venta de sistema</td>
+                <td class="dato4">1000</td>
+                <td class="dato5"></td>
+                <td class="dato6">4000</td>
+            </tr>
+            <tr class="tablasecundaria">
+                <td class="dato1">03-01-2021</td>
+                <td class="dato2">10:00</td>
+                <td class="dato3">Venta de sistema</td>
+                <td class="dato4">500</td>
+                <td class="dato5"></td>
+                <td class="dato6">4500</td>
+            </tr>
+            <tr class="tablasecundaria">
+                <td class="dato1">03-01-2021</td>
+                <td class="dato2">14:00</td>
+                <td class="dato3">Pago proveedores</td>
+                <td class="dato4"></td>
+                <td class="dato5">200</td>
+                <td class="dato6">4300</td>
+            </tr>
+            <tr class="tablasecundaria">
+                <td class="dato1">03-01-2021</td>
+                <td class="dato2">16:00</td>
+                <td class="dato3">Compra bebidas</td>
+                <td class="dato4"></td>
+                <td class="dato5">50</td>
+                <td class="dato6">4250</td>
+            </tr>
+            <tr class="tablasecundaria">
+                <td class="dato1">04-01-2021</td>
+                <td class="dato2">15:00</td>
+                <td class="dato3">Venta de sistema</td>
+                <td class="dato4">2000</td>
+                <td class="dato5"></td>
+                <td class="dato6">6500</td>
+            </tr>
+            <tr class="tablasecundaria">
+                <td class="dato1">05-01-2021</td>
+                <td class="dato2">15:00</td>
+                <td class="dato3">Venta de sistema</td>
+                <td class="dato4">1500</td>
+                <td class="dato5"></td>
+                <td class="dato6">8000</td>
+            </tr>
+            <tr class="tablasecundaria">
+                <td class="dato1">06-01-2021</td>
+                <td class="dato2">16:00</td>
+                <td class="dato3">Compra materiales de limpieza</td>
+                <td class="dato4"></td>
+                <td class="dato5">100</td>
+                <td class="dato6">7900</td>
+            </tr>
+            <tr class="tablasecundaria">
+                <td class="dato1">07-01-2021</td>
+                <td class="dato2">16:00</td>
+                <td class="dato3">Compra pizza</td>
+                <td class="dato4"></td>
+                <td class="dato5">100</td>
+                <td class="dato6">7800</td>
+            </tr>
+        </div>
+    </div>
+</table>	
+</body>
+
+</html>
